@@ -76,9 +76,8 @@ body {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     animation: slideInFromRight 1s ease-in-out 0s 1 normal forwards;
-
 }
 
 /* #endregion */
@@ -144,6 +143,10 @@ body {
     justify-content: space-between;
 }
 
+.personal-data .field p:first-of-type {
+    margin-right: 0.5rem;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -170,13 +173,13 @@ body {
     height: 5px;
     border-radius: 0.5rem;
     background-color: var(--mocha-surface1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .progress {
     height: 5px;
     border-radius: 0.5rem;
     background-color: var(--mocha-sky);
-
 }
 
 .separator {
@@ -185,7 +188,6 @@ body {
     background-color: var(--mocha-surface1);
 }
 
-/* make left side accent */
 .side-left {
     background-color: var(--mocha-surface);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -196,18 +198,30 @@ body {
     position: relative;
     width: 100%;
     padding: 1rem;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0.5rem;
+    /* accent hack */
+    background:
+        linear-gradient(var(--mocha-peach), var(--mocha-peach)) 0px 0px/4px no-repeat,
+        var(--mocha-surface);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    line-height: 1.5rem;
+    flex: 1 0 300px;
+    padding: 1rem;
+    border-radius: 0.5rem;
     background-color: var(--mocha-surface);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
-.red-accent {
-    position: absolute;
-    top: 0;
-    left: -3px;
-    width: 3px;
-    height: 100%;
-    border-radius: 0.5rem 0 0 0.5rem;
-    background-color: var(--mocha-peach);
-
+.card h3 {
+    margin-bottom: 0.5rem;
 }
