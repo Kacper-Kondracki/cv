@@ -1,0 +1,31 @@
+.content {
+    max-width: 90vw;
+    min-height: 90vh;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template: 1fr 9fr / 1fr 4fr;
+    grid-gap: 2rem;
+}
+
+.side-left,
+.side-right {
+    border-radius: 0.5rem;
+}
+
+.side-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+
+.side-right {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.photo {
+    width: 75%;
+}
