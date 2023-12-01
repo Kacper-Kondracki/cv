@@ -108,6 +108,16 @@ body {
     }
 }
 
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
 .avatar {
     width: 100%;
     height: 100%;
@@ -202,6 +212,7 @@ body {
     border-radius: 0.5rem;
     background-color: var(--mocha-surface);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    animation: grow 1s ease-in-out 0s 1 normal forwards;
 }
 
 .card h3 {
