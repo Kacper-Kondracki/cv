@@ -7,129 +7,134 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (min-width: 769px)" href="desktop.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <div class="content">
-
-        <div class="header">
-            <h1>Kacper Kondracki</h1>
-            <h2>Programista</h2>
-        </div>
-        <div class="toggle">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
-
-        <div class="side-left">
-            <div class="photo">
-                <img class="avatar" src="photo.jpg" alt="photo">
+    <input type="checkbox" id="toggle" class="toggle-checkbox" />
+    <div class="wrapper">
+        <div class="content">
+            <div class="header sun">
+                <h1>Kacper Kondracki</h1>
+                <h2>Programista</h2>
             </div>
-            <div class="personal-data">
-                <h3 style="align-self: center;">Dane</h3>
-                <div class="field">
-                    <p>Kraj</p>
-                    <p>Polska</p>
+            <div class="toggle">
+                <label for="toggle" class="toggle-label">
+                    <span class="material-symbols-outlined sun">
+                        light_mode
+                    </span>
+                    <span class="material-symbols-outlined moon">
+                        dark_mode
+                    </span>
+                </label>
+            </div>
+            <div class="side-left">
+                <div class="photo">
+                    <img class="avatar" src="photo.jpg" alt="photo">
                 </div>
-                <div class="field">
-                    <p>Miasto</p>
-                    <p>Bielsko-Biała</p>
+                <div class="personal-data">
+                    <h3 style="align-self: center;">Dane</h3>
+                    <div class="field">
+                        <p>Kraj</p>
+                        <p>Polska</p>
+                    </div>
+                    <div class="field">
+                        <p>Miasto</p>
+                        <p>Bielsko-Biała</p>
+                    </div>
+                    <div class="field">
+                        <p>Wiek</p>
+                        <p>19</p>
+                    </div>
+                    <div class="field">
+                        <p>Telefon</p>
+                        <p>733859242</p>
+                    </div>
+                    <div class="field">
+                        <p>Email</p>
+                        <p>kacper-cirno@proton.me</p>
+                    </div>
                 </div>
-                <div class="field">
-                    <p>Wiek</p>
-                    <p>19</p>
-                </div>
-                <div class="field">
-                    <p>Telefon</p>
-                    <p>733859242</p>
-                </div>
-                <div class="field">
-                    <p>Email</p>
-                    <p>kacper-cirno@proton.me</p>
+                <div class="separator"></div>
+                <div class="skills">
+                    <h3 style="align-self: center; margin-bottom: -0.75rem;">Umiejętności</h3>
+                    <!-- Nie powinno się dawać pasków do CV bo dla rekrutera nic nie znaczą, ale bo ładnie wyglądają, zamieszczam je -->
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="progress-base">
+                            <div class="progress" style="width: 80%;"></div>
+                            <p class="level">Doświadczony</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="progress-base">
+                            <div class="progress" style="width: 85%;"></div>
+                            <p class="level">Doświadczony</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JS</p>
+                        <div class="progress-base">
+                            <div class="progress" style="width: 70%;"></div>
+                            <p class="level">Zaawansowany</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>C#</p>
+                        <div class="progress-base">
+                            <div class="progress" style="width: 95%;"></div>
+                            <p class="level">Ekspert</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Angielski</p>
+                        <div class="progress-base">
+                            <div class="progress" style="width: 78%;"></div>
+                            <p class="level">Zaawansowany</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="separator"></div>
-
-
-            <div class="skills">
-                <h3 style="align-self: center; margin-bottom: -0.75rem;">Umiejętności</h3>
-                <!-- Nie powinno się dawać pasków do CV bo dla rekrutera nic nie znaczą, ale bo ładnie wyglądają, zamieszczam je -->
-                <div class="skill">
-                    <p>HTML</p>
-                    <div class="progress-base">
-                        <div class="progress" style="width: 80%;"></div>
-                        <p class="level">Doświadczony</p>
+            <div class="side-right">
+                <div class="about-me">
+                    <h3>O mnie</h3>
+                    <p>Zajmuję się tworzeniem aplikacji internetowych. Potrafię pisać zarówno nowoczesny front jak i
+                        wydajny
+                        backend. Tworzę też aplikacje desktopowe. W wolnym czasie robię i projektuję gry.</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3 style="color: var(--mocha-blue);">.NET</h3>
+                        <p>Korzystam z wszelakich dostępnych technologii ekosystemu. Posiadam doświadczenie w Razor,
+                            Blazor, WebAPI, Entity Framework. Jeżeli chodzi o aplikacje desktopowe, potrafię tworzyć
+                            interfejsy użytkownika w WinForms, WPF
+                            oraz także Avalonia.</p>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>CSS</p>
-                    <div class="progress-base">
-                        <div class="progress" style="width: 85%;"></div>
-                        <p class="level">Doświadczony</p>
+                    <div class="card">
+                        <h3 style="color: var(--mocha-yellow);">Javascript</h3>
+                        <p>Posiadam doświadczenie w pisaniu reaktywnych aplikacji internetowych. Piszę je w frameworkach
+                            takich jak React, Vue oraz Svelte.</p>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>JS</p>
-                    <div class="progress-base">
-                        <div class="progress" style="width: 70%;"></div>
-                        <p class="level">Zaawansowany</p>
+                    <div class="card">
+                        <h3 style="color: var(--mocha-green);">HTML, CSS</h3>
+                        <p>Potrafię pisać strony internetowe od zera, w czystym HTML i CSS, ale też korzystam z gotowych
+                            frameworków, takich jak Bootstrap, Tailwind. Strony które tworzę zawsze są robione z myślą o
+                            urządzeniach mobilnych.</p>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>C#</p>
-                    <div class="progress-base">
-                        <div class="progress" style="width: 95%;"></div>
-                        <p class="level">Ekspert</p>
+                    <div class="card">
+                        <h3 style="color: var(--mocha-mauve);">Zarządzanie serwerami</h3>
+                        <p>Potrafię zarządzać serwerami i konfigurować usługi takie jak MariaDB, Redis, Postgres, Nginx
+                            i
+                            korzystać z nich w kontenerze Docker. Płynnie obsługuję system operacyjny Linux i jego
+                            dystrybucje
+                            takie jak Debian, Ubuntu.</p>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>Angielski</p>
-                    <div class="progress-base">
-                        <div class="progress" style="width: 78%;"></div>
-                        <p class="level">Zaawansowany</p>
+                    <div class="card">
+                        <h3 style="color: var(--mocha-sapphire);">Edukacja</h3>
+                        <p>Studiuję Informatykę na Uniwersytecie Bielsko-Bialskim.</p>
                     </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="side-right">
-            <div class="about-me">
-                <h3>O mnie</h3>
-                <p>Zajmuję się tworzeniem aplikacji internetowych. Potrafię pisać zarówno nowoczesny front jak i wydajny
-                    backend. Tworzę też aplikacje desktopowe. W wolnym czasie robię i projektuję gry.</p>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <h3 style="color: var(--mocha-blue);">.NET</h3>
-                    <p>Korzystam z wszelakich dostępnych technologii ekosystemu. Posiadam doświadczenie w Razor,
-                        Blazor, WebAPI, Entity Framework. Jeżeli chodzi o aplikacje desktopowe, potrafię tworzyć
-                        interfejsy użytkownika w WinForms, WPF
-                        oraz także Avalonia.</p>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--mocha-yellow);">Javascript</h3>
-                    <p>Posiadam doświadczenie w pisaniu reaktywnych aplikacji internetowych. Piszę je w frameworkach
-                        takich jak React, Vue oraz Svelte.</p>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--mocha-green);">HTML, CSS</h3>
-                    <p>Potrafię pisać strony internetowe od zera, w czystym HTML i CSS, ale też korzystam z gotowych
-                        frameworków, takich jak Bootstrap, Tailwind. Strony które tworzę zawsze są robione z myślą o
-                        urządzeniach mobilnych.</p>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--mocha-mauve);">Zarządzanie serwerami</h3>
-                    <p>Potrafię zarządzać serwerami i konfigurować usługi takie jak MariaDB, Redis, Postgres, Nginx i
-                        korzystać z nich w kontenerze Docker. Płynnie obsługuję system operacyjny Linux i jego
-                        dystrybucje
-                        takie jak Debian, Ubuntu.</p>
-                </div>
-                <div class="card">
-                    <h3 style="color: var(--mocha-sapphire);">Edukacja</h3>
-                    <p>Studiuję Informatykę na Uniwersytecie Bielsko-Bialskim.</p>
                 </div>
             </div>
         </div>

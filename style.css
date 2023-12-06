@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body {
+body .wrapper {
     font-family: 'Roboto', sans-serif;
     color: var(--mocha-text);
     background-color: var(--mocha-mantle);
@@ -209,60 +209,54 @@ body {
 
 .toggle {
     align-self: center;
+    user-select: none;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+.toggle-checkbox {
+    display: none;
 }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
+.toggle-label {
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
+.sun {
+    margin-right: -28px;
+    opacity: calc(var(--toggle));
 }
 
-input:checked+.slider {
-    background-color: #2196F3;
+.moon {
+    opacity: calc(1 - var(--toggle));
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+.toggle-checkbox:checked~.wrapper {
+    --mocha-rosewater: var(--latte-rosewater);
+    --mocha-flamingo: var(--latte-flamingo);
+    --mocha-pink: var(--latte-pink);
+    --mocha-mauve: var(--latte-mauve);
+    --mocha-red: var(--latte-red);
+    --mocha-maroon: var(--latte-maroon);
+    --mocha-peach: var(--latte-peach);
+    --mocha-yellow: var(--latte-yellow);
+    --mocha-green: var(--latte-green);
+    --mocha-teal: var(--latte-teal);
+    --mocha-sky: var(--latte-sky);
+    --mocha-sapphire: var(--latte-sapphire);
+    --mocha-blue: var(--latte-blue);
+    --mocha-lavender: var(--latte-lavender);
+    --mocha-text: var(--latte-text);
+    --mocha-subtext1: var(--latte-subtext1);
+    --mocha-subtext0: var(--latte-subtext0);
+    --mocha-overlay2: var(--latte-overlay2);
+    --mocha-overlay1: var(--latte-overlay1);
+    --mocha-overlay0: var(--latte-overlay0);
+    --mocha-surface2: var(--latte-surface2);
+    --mocha-surface1: var(--latte-surface1);
+    --mocha-surface0: var(--latte-surface0);
+    --mocha-surface: var(--latte-surface);
+    --mocha-base1: var(--latte-base1);
+    --mocha-base: var(--latte-base);
+    --mocha-mantle: var(--latte-mantle);
+    --mocha-crust: var(--latte-crust);
+    --toggle: 1;
 }
