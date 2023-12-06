@@ -2,6 +2,8 @@
     width: 30%;
 }
 
+
+
 .content {
 
     padding: 2rem;
@@ -39,5 +41,9 @@
 
     .photo {
         width: 75%;
+    }
+
+    .toggle {
+        grid-column: 3 / 4;
     }
 }
