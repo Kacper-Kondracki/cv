@@ -39,12 +39,19 @@
         grid-row: 2 / 3;
     }
 
+    .header {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
     .photo {
         width: 75%;
     }
 
     .toggle {
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        text-align: right;
         align-self: auto;
     }
 }
