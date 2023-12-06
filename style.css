@@ -225,6 +225,10 @@ body .wrapper {
     opacity: calc(1 - var(--toggle));
 }
 
+.material-symbols-outlined {
+    font-display: block;
+}
+
 .toggle-checkbox:checked~.wrapper {
     --mocha-rosewater: var(--latte-rosewater);
     --mocha-flamingo: var(--latte-flamingo);
